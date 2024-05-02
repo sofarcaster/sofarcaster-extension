@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extension Popup</title>
+    <style>
+      body {
+        padding: 20px;
+        width: 300px;
+        height: 400px;
+      }
+      textarea {
+        width: 200px;
+        height: 140px;
+        margin-top: 10px;
+      }
+      h1 {
+        color: #333;
+      }
+      #contentArea {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        background-color: #f4f4f4;
+      }
+
+      .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to My Chrome Extension!</h1>
+    <p>Click the button below for a quick action.</p>
+    <button id="callApiButton">Call Local API</button>
+    <button id="fetchData">Fetch Data</button>
+    <textarea id="dataArea"></textarea>
+    <div id="contentArea"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
